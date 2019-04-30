@@ -93,8 +93,7 @@
 
 		<div class="links">
 			<br>
-			<a href="https://forge.laravel.com">Rest/API</a>
-			<a href="https://github.com/laravel/laravel">Rest/API & Vue js</a>
+			<a href="https://github.com/MvTechZone/Rest-API-And-Vue-Js">Rest/API & Vue js</a>
 		</div>
 
 		<div class="message m-b-md">
