@@ -47840,26 +47840,26 @@ module.exports = Component.exports
 			var _vm = this;
 			var _h = _vm.$createElement;
 			var _c = _vm._self._c || _h;
-			return _vm._m(0)
-		};
-		var staticRenderFns = [
-			function () {
-				var _vm = this;
-				var _h = _vm.$createElement;
-				var _c = _vm._self._c || _h;
-				return _c(
-					"div",
-					{staticClass: "nav navbar-expand-sm navbar-dark bg-info mb-2"},
-					[
-						_c("div", {staticClass: "container"}, [
-							_c("a", {staticClass: "navbar-brand", attrs: {href: "#"}}, [
-								_vm._v("Rest-API")
+			return _c(
+				"div",
+				{staticClass: "nav navbar-expand-sm navbar-dark bg-info mb-2"},
+				[
+					_c(
+						"div",
+						{staticClass: "container"},
+						[
+							_c("center", [
+								_c("a", {staticClass: "navbar-brand", attrs: {href: "#"}}, [
+									_vm._v("Vue Js Simulation")
+								])
 							])
-						])
-					]
-				)
-			}
-		];
+						],
+						1
+					)
+				]
+			)
+		};
+		var staticRenderFns = [];
 		render._withStripped = true;
 		module.exports = {render: render, staticRenderFns: staticRenderFns};
 		if (false) {
