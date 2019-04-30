@@ -14072,7 +14072,8 @@ module.exports = Cancel;
 			el: '#app'
 });
 
-		/***/ }),
+		/***/
+	}),
 	/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
