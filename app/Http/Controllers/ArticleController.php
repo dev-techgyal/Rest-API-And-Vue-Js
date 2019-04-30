@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Article;
-use Illuminate\Http\Request;
 use App\Http\Resources\Article as ArticleResource;
+use Illuminate\Http\Request;
 
 class ArticleController extends Controller {
 	/**
@@ -14,7 +14,7 @@ class ArticleController extends Controller {
 	 */
 	public function index() {
 		//fetch articles
-		$articles = (new Article())->paginate(15);
+		$articles = (new Article())->newQuery()->paginate(15);
 		//return articles as collection of resource
 		return ArticleResource::collection($articles);
 	}
@@ -36,7 +36,7 @@ class ArticleController extends Controller {
 	 */
 	public function store(Request $request) {
 		//here check if the method is put else create new article
-		$article = $request->isMethod('put') ? Article::findOrFail($request->article_id) : new Article();
+		$article = $request->isMethod('put') ? Article::query()->findOrFail($request->article_id) : new Article();
 
 		//get article_id
 		$article->id = $request->input('article_id');
@@ -59,7 +59,7 @@ class ArticleController extends Controller {
 	 */
 	public function show($id) {
 		//fetch single article
-		$article = (new Article())->findOrFail($id);
+		$article = (new Article())->newQuery()->findOrFail($id);
 
 		//return the article as a resource
 		return new ArticleResource($article);
@@ -94,7 +94,7 @@ class ArticleController extends Controller {
 	 */
 	public function destroy($id) {
 		//fetch single article
-		$article = (new Article())->findOrFail($id);
+		$article = (new Article())->newQuery()->findOrFail($id);
 
 		if ($article->delete())
 			return new ArticleResource($article);
