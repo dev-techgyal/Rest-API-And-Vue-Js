@@ -16,8 +16,8 @@ This repository contains the code for rest/api and vue js for learning(https://m
 - Test all examples and try yours *O_o*
 
 ## How To Access *Vue Js* Example
-- Access the *api route* located at *routes* folder.
-- Enter in the browser *http://127.0.0.1:8001/api/articles*
+- Install npm.
+- Run *npm run --watch*
 - Test all examples and try yours *O_o*
 
 *Maintained By MvTechZone*
