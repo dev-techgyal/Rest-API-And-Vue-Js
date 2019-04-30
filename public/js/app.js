@@ -48131,7 +48131,11 @@ var render = function() {
 								}
 							],
 							staticClass: "form-control",
-							attrs: {type: "text", placeholder: "Article Title"},
+							attrs: {
+								type: "text",
+								placeholder: "Article Title",
+								required: ""
+							},
 							domProps: {value: _vm.article.title},
 							on: {
 								input: function ($event) {
@@ -48155,7 +48159,7 @@ var render = function() {
 								}
 							],
 							staticClass: "form-control",
-							attrs: {placeholder: "Article Body"},
+							attrs: {placeholder: "Article Body", required: ""},
 							domProps: {value: _vm.article.body},
 							on: {
 								input: function ($event) {

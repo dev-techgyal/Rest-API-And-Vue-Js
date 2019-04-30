@@ -3,10 +3,10 @@
         <h2>Articles</h2>
         <form @submit.prevent="addArticle()" class="mb-3">
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Article Title" v-model="article.title">
+                <input type="text" class="form-control" placeholder="Article Title" v-model="article.title" required>
             </div>
             <div class="form-group">
-                <textarea class="form-control" placeholder="Article Body"
+                <textarea class="form-control" placeholder="Article Body" required
                           v-model="article.body"></textarea>
             </div>
             <button type="submit" class="btn btn-light btn-block mb-2">Save</button>
