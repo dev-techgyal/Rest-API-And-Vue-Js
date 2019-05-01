@@ -20,4 +20,4 @@ This repository contains the code for rest/api and vue js for learning(https://m
 - Run *npm run --watch*
 - Test all examples and try yours *O_o*
 
-*Maintained By MvTechZone*
+*Maintained By TechGyal*
