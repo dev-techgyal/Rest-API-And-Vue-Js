@@ -1,6 +1,6 @@
 # LARAVEL *REST/API* AND *VUE JS*
 
-This repository contains the code for rest/api and vue js for learning(https://mvtechzone.com).
+This repository contains the code for rest/api and vue js for learning.
 
 ## How To Set Up
 - After downloading the code.
